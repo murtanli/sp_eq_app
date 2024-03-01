@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".auth.Sign_in">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pasword_text_sign_block2"
+        android:layout_width="285dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/number_phone_block"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pasword_text_sign_block"
+        tools:ignore="NotSibling">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pasword_text_sign2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Регистрация"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/button_sign"
+        android:layout_width="185dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="132dp"
+        android:text="Регистрация"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_text_sign_block"
+        android:layout_width="289dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.156"
+        tools:ignore="MissingConstraints">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login_text_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Логин" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/pasword_text_sign_block"
+        android:layout_width="285dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login_text_sign_block"
+        app:layout_constraintVertical_bias="0.262">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/pasword_text_sign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Пароль" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/number_phone_block"
+        android:layout_width="285dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="44dp"
+        app:layout_constraintBottom_toTopOf="@+id/button_sign"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="DuplicateIds">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/number_phone_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:hint="Номер телефона"
+            tools:ignore="DuplicateIds" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_sign" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
